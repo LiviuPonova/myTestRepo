@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="262,700" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uwc="clr-namespace:UiPath.WebClient.ClientNamespace;assembly=SwaggerPetstore" xmlns:uwn="clr-namespace:UiPath.WebClient.ndfdXMLPortTypeClientNamespace;assembly=Weather" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="262,762" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uwc="clr-namespace:UiPath.WebClient.ClientNamespace;assembly=SwaggerPetstore" xmlns:uwn="clr-namespace:UiPath.WebClient.ndfdXMLPortTypeClientNamespace;assembly=Weather" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -43,7 +43,7 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="222,580" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="222,642" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -55,21 +55,6 @@
         <uwc:ClientCreateUserRequest Body="{x:Null}" />
       </uwc:CreateUserActivity.Request>
     </uwc:CreateUserActivity>
-    <uwc:PlaceOrderActivity BearerToken="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" Headers="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" Response="{x:Null}" Username="{x:Null}" DisplayName="PlaceOrder" Endpoint="[&quot;https://petstore.swagger.io/v2&quot;]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="PlaceOrderActivity_1" TimeoutMS="30000">
-      <uwc:PlaceOrderActivity.Request>
-        <uwc:ClientPlaceOrderRequest Body="{x:Null}" />
-      </uwc:PlaceOrderActivity.Request>
-    </uwc:PlaceOrderActivity>
-    <uwc:UpdatePetActivity BearerToken="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" Headers="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" Username="{x:Null}" DisplayName="UpdatePet" Endpoint="[&quot;https://petstore.swagger.io/v2&quot;]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="UpdatePetActivity_1" TimeoutMS="30000">
-      <uwc:UpdatePetActivity.Request>
-        <uwc:ClientUpdatePetRequest Body="{x:Null}" />
-      </uwc:UpdatePetActivity.Request>
-    </uwc:UpdatePetActivity>
-    <uwc:GetInventoryActivity BearerToken="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" Headers="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" Response="{x:Null}" Username="{x:Null}" DisplayName="GetInventory" Endpoint="[&quot;https://petstore.swagger.io/v2&quot;]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GetInventoryActivity_1" TimeoutMS="30000">
-      <uwc:GetInventoryActivity.Request>
-        <uwc:ClientGetInventoryRequest />
-      </uwc:GetInventoryActivity.Request>
-    </uwc:GetInventoryActivity>
     <uwc:UploadFileActivity BearerToken="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" Headers="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" Response="{x:Null}" Username="{x:Null}" DisplayName="UploadFile" Endpoint="[&quot;https://petstore.swagger.io/v2&quot;]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="UploadFileActivity_1" TimeoutMS="30000">
       <uwc:UploadFileActivity.Request>
         <uwc:ClientUploadFileRequest AdditionalMetadata="{x:Null}" File="{x:Null}" PetId="{x:Null}" />
@@ -77,5 +62,21 @@
     </uwc:UploadFileActivity>
     <uwn:LatLonListLineActivity ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" Password="{x:Null}" Request="{x:Null}" Response="{x:Null}" Username="{x:Null}" ConnectionType="HTTPS" DisplayName="LatLonListLine" EndPoint="[&quot;https://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php&quot;]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="LatLonListLineActivity_2" TimeoutMS="30000" UseWindowsCredentials="False" />
     <uwn:CornerPointsActivity ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" Password="{x:Null}" Request="{x:Null}" Response="{x:Null}" Username="{x:Null}" ConnectionType="HTTPS" DisplayName="CornerPoints" EndPoint="[&quot;https://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php&quot;]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="CornerPointsActivity_1" TimeoutMS="30000" UseWindowsCredentials="False" />
+    <uwc:LogoutUserActivity BearerToken="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" Headers="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" Username="{x:Null}" DisplayName="LogoutUser" Endpoint="[&quot;https://petstore.swagger.io/v2&quot;]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="LogoutUserActivity_1" TimeoutMS="30000">
+      <uwc:LogoutUserActivity.Request>
+        <uwc:ClientLogoutUserRequest />
+      </uwc:LogoutUserActivity.Request>
+    </uwc:LogoutUserActivity>
+    <uwc:GetPetByIdActivity BearerToken="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" Headers="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" Response="{x:Null}" Username="{x:Null}" DisplayName="GetPetById" Endpoint="[&quot;https://petstore.swagger.io/v2&quot;]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GetPetByIdActivity_1" TimeoutMS="30000">
+      <uwc:GetPetByIdActivity.Request>
+        <uwc:ClientGetPetByIdRequest PetId="{x:Null}" />
+      </uwc:GetPetByIdActivity.Request>
+    </uwc:GetPetByIdActivity>
+    <uwc:UploadFileActivity BearerToken="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" Headers="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" Response="{x:Null}" Username="{x:Null}" DisplayName="UploadFile" Endpoint="[&quot;https://petstore.swagger.io/v2&quot;]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="UploadFileActivity_2" TimeoutMS="30000">
+      <uwc:UploadFileActivity.Request>
+        <uwc:ClientUploadFileRequest AdditionalMetadata="{x:Null}" File="{x:Null}" PetId="{x:Null}" />
+      </uwc:UploadFileActivity.Request>
+    </uwc:UploadFileActivity>
+    <uwn:LatLonListSquareActivity ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" Password="{x:Null}" Request="{x:Null}" Response="{x:Null}" Username="{x:Null}" ConnectionType="HTTPS" DisplayName="LatLonListSquare" EndPoint="[&quot;https://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php&quot;]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="LatLonListSquareActivity_1" TimeoutMS="30000" UseWindowsCredentials="False" />
   </Sequence>
 </Activity>

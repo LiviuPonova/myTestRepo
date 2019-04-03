@@ -64,14 +64,6 @@
  </xsd:complexType>
 </xsd:schema>
 </types>
-<message name="NDFDgenRequest">
-  <part name="latitude" type="xsd:decimal" />
-  <part name="longitude" type="xsd:decimal" />
-  <part name="product" type="xsd:string" />
-  <part name="startTime" type="xsd:dateTime" />
-  <part name="endTime" type="xsd:dateTime" />
-  <part name="Unit" type="xsd:string" />
-  <part name="weatherParameters" type="tns:weatherParametersType" /></message>
 <message name="NDFDgenResponse">
   <part name="dwmlOut" type="xsd:string" /></message>
 <message name="NDFDgenLatLonListRequest">
